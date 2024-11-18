@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gTV-IL-0wX" customClass="AvatarCell" customModule="iOSTrainingProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="361"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="361"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tq0-Tv-2r8">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="361"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="m1W-85-J8b">
+                                <rect key="frame" x="5" y="5" width="399" height="351"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m1W-85-J8b" firstAttribute="leading" secondItem="tq0-Tv-2r8" secondAttribute="leading" constant="5" id="3Qg-d8-n6l"/>
+                            <constraint firstAttribute="trailing" secondItem="m1W-85-J8b" secondAttribute="trailing" constant="5" id="7L4-QB-tJs"/>
+                            <constraint firstAttribute="bottom" secondItem="m1W-85-J8b" secondAttribute="bottom" constant="5" id="AN6-7B-Xuz"/>
+                            <constraint firstItem="m1W-85-J8b" firstAttribute="top" secondItem="tq0-Tv-2r8" secondAttribute="top" constant="5" id="Huv-pQ-ERG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tq0-Tv-2r8" secondAttribute="trailing" id="Hzx-4s-biE"/>
+                <constraint firstItem="tq0-Tv-2r8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MWM-jW-jc9"/>
+                <constraint firstAttribute="bottom" secondItem="tq0-Tv-2r8" secondAttribute="bottom" id="Yyf-0Z-E3Q"/>
+                <constraint firstItem="tq0-Tv-2r8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xHC-eI-9MB"/>
+            </constraints>
+            <size key="customSize" width="409" height="361"/>
+            <connections>
+                <outlet property="avatarImageView" destination="m1W-85-J8b" id="nUb-Go-TS6"/>
+                <outlet property="backgroundImageView" destination="tq0-Tv-2r8" id="v9b-P5-uL0"/>
+            </connections>
+            <point key="canvasLocation" x="171.75572519083968" y="67.957746478873247"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatar1" width="458" height="545"/>
+    </resources>
+</document>
