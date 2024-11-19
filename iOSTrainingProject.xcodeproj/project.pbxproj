@@ -30,6 +30,8 @@
 		4B813BE02CEB4384005018C3 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BDE2CEB4384005018C3 /* MyPageViewController.xib */; };
 		4B813BE92CEB442B005018C3 /* FavoriteTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BE72CEB442B005018C3 /* FavoriteTutorViewController.swift */; };
 		4B813BEA2CEB442B005018C3 /* FavoriteTutorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BE82CEB442B005018C3 /* FavoriteTutorViewController.xib */; };
+		4BC98E352CEC1EA0003E6E7E /* TeachersProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC98E342CEC1EA0003E6E7E /* TeachersProfileView.swift */; };
+		4BC98E392CEC863C003E6E7E /* TeachersProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC98E382CEC863C003E6E7E /* TeachersProfileComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		4B813BDE2CEB4384005018C3 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
 		4B813BE72CEB442B005018C3 /* FavoriteTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTutorViewController.swift; sourceTree = "<group>"; };
 		4B813BE82CEB442B005018C3 /* FavoriteTutorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTutorViewController.xib; sourceTree = "<group>"; };
+		4BC98E342CEC1EA0003E6E7E /* TeachersProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersProfileView.swift; sourceTree = "<group>"; };
+		4BC98E382CEC863C003E6E7E /* TeachersProfileComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersProfileComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,19 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				4B813BA52CEB0682005018C3 /* AppDelegate.swift */,
-				4B813BA72CEB0682005018C3 /* SceneDelegate.swift */,
 				4B813BA92CEB0682005018C3 /* ViewController.swift */,
-				4B813BAB2CEB0682005018C3 /* Main.storyboard */,
-				4B813BC82CEB0BF0005018C3 /* Teacher.swift */,
 				4B813BD42CEB310C005018C3 /* Avatar.swift */,
-				4B813BD72CEB42FC005018C3 /* Textbook */,
-				4B813BD82CEB4304005018C3 /* MyPage */,
-				4B813BD62CEB42F0005018C3 /* FavoriteTutor */,
-				4B813BBD2CEB06D1005018C3 /* Learning */,
-				4B813BBC2CEB06CC005018C3 /* Home */,
+				4B813BA72CEB0682005018C3 /* SceneDelegate.swift */,
+				4BC98E332CEC1E5D003E6E7E /* Model */,
+				4BC98E312CEC1CDF003E6E7E /* OtherTab */,
 				4B813BB92CEB06A2005018C3 /* CustomTabbar */,
-				4B813BAE2CEB0683005018C3 /* Assets.xcassets */,
+				4B813BBC2CEB06CC005018C3 /* Home */,
+				4BC98E322CEC1DF9003E6E7E /* TeachersProfile */,
+				4B813BAB2CEB0682005018C3 /* Main.storyboard */,
 				4B813BB02CEB0683005018C3 /* LaunchScreen.storyboard */,
+				4B813BAE2CEB0683005018C3 /* Assets.xcassets */,
 				4B813BB32CEB0683005018C3 /* Info.plist */,
 			);
 			path = iOSTrainingProject;
@@ -180,6 +182,34 @@
 				4B813BDE2CEB4384005018C3 /* MyPageViewController.xib */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		4BC98E312CEC1CDF003E6E7E /* OtherTab */ = {
+			isa = PBXGroup;
+			children = (
+				4B813BD72CEB42FC005018C3 /* Textbook */,
+				4B813BD82CEB4304005018C3 /* MyPage */,
+				4B813BD62CEB42F0005018C3 /* FavoriteTutor */,
+				4B813BBD2CEB06D1005018C3 /* Learning */,
+			);
+			path = OtherTab;
+			sourceTree = "<group>";
+		};
+		4BC98E322CEC1DF9003E6E7E /* TeachersProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4BC98E342CEC1EA0003E6E7E /* TeachersProfileView.swift */,
+				4BC98E382CEC863C003E6E7E /* TeachersProfileComponent.swift */,
+			);
+			path = TeachersProfile;
+			sourceTree = "<group>";
+		};
+		4BC98E332CEC1E5D003E6E7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B813BC82CEB0BF0005018C3 /* Teacher.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +301,10 @@
 				4B813BDF2CEB4384005018C3 /* MyPageViewController.swift in Sources */,
 				4B813BA82CEB0682005018C3 /* SceneDelegate.swift in Sources */,
 				4B813BC92CEB0BF0005018C3 /* Teacher.swift in Sources */,
+				4BC98E392CEC863C003E6E7E /* TeachersProfileComponent.swift in Sources */,
 				4B813BD52CEB310C005018C3 /* Avatar.swift in Sources */,
 				4B813BC62CEB072D005018C3 /* HomeViewController.swift in Sources */,
+				4BC98E352CEC1EA0003E6E7E /* TeachersProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

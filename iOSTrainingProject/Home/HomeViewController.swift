@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import SwiftUI
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var ratingOrderButtonLabel: UIButton!
     @IBOutlet weak var avatarCollectionView: UICollectionView!
     @IBOutlet weak var teachersTableView: UITableView!
     
@@ -24,21 +26,26 @@ class HomeViewController: UIViewController {
     ]
     
     private let avatars : [Avatar] = [
-        Avatar(imageName: "avatar1", name: "John Doe"),
-        Avatar(imageName: "avatar2", name: "Jane Smith"),
-        Avatar(imageName: "avatar3", name: "Alex Brown"),
-        Avatar(imageName: "avatar4", name: "Emily White"),
-        Avatar(imageName: "avatar5", name: "Michael Green")
+        Avatar(imageName: "bear", name: "Bear"),
+        Avatar(imageName: "panda", name: "panda"),
+        Avatar(imageName: "mouse", name: "mouse"),
+        Avatar(imageName: "monkey", name: "monkey"),
+        Avatar(imageName: "lion", name: "lion")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home"
+        
         let nib = UINib(nibName: "TeacherCell", bundle: nil)
         teachersTableView.register(nib, forCellReuseIdentifier: "TeacherCell")
         
         let nib2 = UINib(nibName: "AvatarCell", bundle: nil)
         avatarCollectionView.register(nib2, forCellWithReuseIdentifier: "AvatarCell")
+        
+        //design2x
+        ratingOrderButtonLabel.layer.cornerRadius = 20
+        ratingOrderButtonLabel.layer.masksToBounds = true
     }
 
 }
@@ -69,7 +76,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let selectedTeacher = teachers[indexPath.row]
+        let swiftUIView = TeachersProfileView(teacher: selectedTeacher)
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        navigationController?.pushViewController(hostingController, animated: true)
     }
     
 }
@@ -88,7 +98,7 @@ extension HomeViewController:UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 90.75, height: 86.4)
+        return CGSize(width: 110, height: 254.5)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -100,4 +110,7 @@ extension HomeViewController:UICollectionViewDelegate, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+            return UIEdgeInsets(top: 15, left: 5, bottom: 10, right: 0)
+        }
 }

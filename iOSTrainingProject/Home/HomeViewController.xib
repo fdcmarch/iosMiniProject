@@ -11,23 +11,24 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="iOSTrainingProject" customModuleProvider="target">
             <connections>
                 <outlet property="avatarCollectionView" destination="Kv6-S7-Zxa" id="FDt-KS-bqM"/>
+                <outlet property="ratingOrderButtonLabel" destination="m2s-9G-i43" id="Zwt-0N-0b8"/>
                 <outlet property="teachersTableView" destination="8Mi-QJ-ynO" id="4Iz-vz-R0g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="1257"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o09-e9-7z1">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o09-e9-7z1">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="1257"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4d-Of-OBS">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="728"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1019"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vou-gM-ts7">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="728"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="1019"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L77-an-AiK">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="146"/>
@@ -70,7 +71,7 @@
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPH-di-7CL">
                                                                             <rect key="frame" x="49.666666666666686" y="0.0" width="46.333333333333343" height="34.333333333333336"/>
                                                                             <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                                                                            <buttonConfiguration key="configuration" style="plain" image="bookmark.fill" catalog="system"/>
                                                                         </button>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yL9-OY-1SA">
                                                                             <rect key="frame" x="96" y="0.0" width="49.666666666666657" height="34.333333333333336"/>
@@ -132,7 +133,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="ELO-F8-klq">
-                                            <rect key="frame" x="0.0" y="600" width="393" height="128"/>
+                                            <rect key="frame" x="0.0" y="600" width="393" height="287"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Avatar Tutor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpd-Qd-0Dr">
                                                     <rect key="frame" x="8" y="8" width="107" height="22"/>
@@ -141,10 +142,10 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Kv6-S7-Zxa">
-                                                    <rect key="frame" x="0.0" y="32" width="393" height="96"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv6-S7-Zxa">
+                                                    <rect key="frame" x="0.0" y="32" width="393" height="255"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E1d-hP-kz8">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -159,11 +160,18 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eui-b1-5hR">
+                                            <rect key="frame" x="0.0" y="891" width="393" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="eui-b1-5hR" firstAttribute="leading" secondItem="Vou-gM-ts7" secondAttribute="leading" id="2GA-Qg-pPc"/>
                                         <constraint firstItem="M01-Xo-DF9" firstAttribute="top" secondItem="Vou-gM-ts7" secondAttribute="top" constant="150" id="9wv-Ju-sz5"/>
                                         <constraint firstItem="ELO-F8-klq" firstAttribute="top" secondItem="Vou-gM-ts7" secondAttribute="top" constant="600" id="JjG-G0-MeH"/>
                                         <constraint firstAttribute="trailing" secondItem="L77-an-AiK" secondAttribute="trailing" id="KU1-1u-SXg"/>
+                                        <constraint firstAttribute="trailing" secondItem="eui-b1-5hR" secondAttribute="trailing" id="LkK-Q4-JLY"/>
+                                        <constraint firstItem="eui-b1-5hR" firstAttribute="top" secondItem="Vou-gM-ts7" secondAttribute="top" constant="891" id="NTI-af-Ld0"/>
                                         <constraint firstItem="M01-Xo-DF9" firstAttribute="leading" secondItem="Vou-gM-ts7" secondAttribute="leading" id="TiD-Be-AG2"/>
                                         <constraint firstItem="M01-Xo-DF9" firstAttribute="leading" secondItem="ELO-F8-klq" secondAttribute="leading" id="a3L-FH-RAF"/>
                                         <constraint firstItem="L77-an-AiK" firstAttribute="leading" secondItem="Vou-gM-ts7" secondAttribute="leading" id="cjz-6P-KhW"/>
@@ -171,7 +179,6 @@
                                     </constraints>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                             <constraints>
                                 <constraint firstItem="Vou-gM-ts7" firstAttribute="leading" secondItem="q4d-Of-OBS" secondAttribute="leading" id="8t4-hu-BJc"/>
                                 <constraint firstAttribute="trailing" secondItem="Vou-gM-ts7" secondAttribute="trailing" id="cxg-4H-aKe"/>
@@ -191,7 +198,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="o09-e9-7z1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-59" id="AC7-WH-cD1"/>
@@ -201,28 +208,29 @@
                 <constraint firstAttribute="trailing" secondItem="o09-e9-7z1" secondAttribute="trailing" id="jG1-D2-HoS"/>
                 <constraint firstAttribute="bottom" secondItem="o09-e9-7z1" secondAttribute="bottom" id="o41-IF-ICs"/>
             </constraints>
-            <point key="canvasLocation" x="58.778625954198468" y="-12.67605633802817"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58.778625954198468" y="71.478873239436624"/>
         </view>
     </objects>
     <resources>
         <image name="arrow.left.arrow.right.square" catalog="system" width="128" height="114"/>
         <image name="bitcoinsign.circle" catalog="system" width="128" height="123"/>
-        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
