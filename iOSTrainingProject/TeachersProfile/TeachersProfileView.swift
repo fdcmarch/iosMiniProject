@@ -12,19 +12,19 @@ struct TeachersProfileView: View {
     var teacher: Teacher? = nil
     
     let generations = [
-        GenerationPercent(generationLabel: "Up to 9 years old", percentage: 1.9),
-        GenerationPercent(generationLabel: "Teens", percentage: 10.48),
-        GenerationPercent(generationLabel: "20s", percentage: 24.27),
-        GenerationPercent(generationLabel: "30s", percentage: 3.64),
-        GenerationPercent(generationLabel: "40s", percentage: 4.17),
-        GenerationPercent(generationLabel: "50s", percentage: 56.5),
-        GenerationPercent(generationLabel: "60s", percentage: 0.95)
+        GenerationChoosingThisInstructorView(generationLabel: "Up to 9 years old", percentage: 1.9),
+        GenerationChoosingThisInstructorView(generationLabel: "Teens", percentage: 10.48),
+        GenerationChoosingThisInstructorView(generationLabel: "20s", percentage: 24.27),
+        GenerationChoosingThisInstructorView(generationLabel: "30s", percentage: 3.64),
+        GenerationChoosingThisInstructorView(generationLabel: "40s", percentage: 4.17),
+        GenerationChoosingThisInstructorView(generationLabel: "50s", percentage: 56.5),
+        GenerationChoosingThisInstructorView(generationLabel: "60s", percentage: 0.95)
         ]
     
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
-                TeachersProfileHeader()
+                TeachersProfileHeaderView()
                 //start: body
                 HStack {
                     Image("panda")
@@ -187,19 +187,22 @@ struct TeachersProfileView: View {
                     })
                 }
                 
-                    TutorsProfileIntroduction()
+                    TutorsProfileIntroductionView()
                 
                     VStack(alignment: .leading) {
                         Text("Generation choosing this instructor")
                             .font(.system(size: 23))
                             .bold()
                         ForEach(generations, id: \.generationLabel) { generation in
-                                GenerationPercent(generationLabel: generation.generationLabel, percentage: generation.percentage)
+                            GenerationChoosingThisInstructorView(generationLabel: generation.generationLabel, percentage: generation.percentage)
                         }
                     }
                     .padding(10)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundStyle(.white)
+                
+                    GalleyImageView()
+                    RecommendedTutorsView()
                 //end: 3 tab
             }
             
