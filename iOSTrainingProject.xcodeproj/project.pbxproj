@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7B13C12CEEC74C00A2782D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B13C02CEEC74C00A2782D /* NetworkManager.swift */; };
+		4B7B13CB2CEEFB1900A2782D /* TeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B13C92CEEFB1900A2782D /* TeacherCell.swift */; };
+		4B7B13CC2CEEFB1A00A2782D /* TeacherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7B13CA2CEEFB1900A2782D /* TeacherCell.xib */; };
+		4B7B13CF2CEEFBED00A2782D /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B13CD2CEEFBED00A2782D /* AvatarCell.swift */; };
+		4B7B13D02CEEFBED00A2782D /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7B13CE2CEEFBED00A2782D /* AvatarCell.xib */; };
 		4B813BA62CEB0682005018C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BA52CEB0682005018C3 /* AppDelegate.swift */; };
 		4B813BA82CEB0682005018C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BA72CEB0682005018C3 /* SceneDelegate.swift */; };
-		4B813BAA2CEB0682005018C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BA92CEB0682005018C3 /* ViewController.swift */; };
+		4B813BAA2CEB0682005018C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BA92CEB0682005018C3 /* HomeViewController.swift */; };
 		4B813BAD2CEB0682005018C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BAB2CEB0682005018C3 /* Main.storyboard */; };
 		4B813BAF2CEB0683005018C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BAE2CEB0683005018C3 /* Assets.xcassets */; };
 		4B813BB22CEB0683005018C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BB02CEB0683005018C3 /* LaunchScreen.storyboard */; };
 		4B813BBB2CEB06BE005018C3 /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BBA2CEB06BE005018C3 /* CustomTabbarController.swift */; };
 		4B813BC22CEB0716005018C3 /* LearningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BC02CEB0716005018C3 /* LearningViewController.swift */; };
 		4B813BC32CEB0716005018C3 /* LearningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BC12CEB0716005018C3 /* LearningViewController.xib */; };
-		4B813BC62CEB072D005018C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BC42CEB072D005018C3 /* HomeViewController.swift */; };
-		4B813BC72CEB072D005018C3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BC52CEB072D005018C3 /* HomeViewController.xib */; };
 		4B813BC92CEB0BF0005018C3 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BC82CEB0BF0005018C3 /* Teacher.swift */; };
-		4B813BCD2CEB0C72005018C3 /* TeacherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BCB2CEB0C72005018C3 /* TeacherCell.swift */; };
-		4B813BCE2CEB0C72005018C3 /* TeacherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BCC2CEB0C72005018C3 /* TeacherCell.xib */; };
-		4B813BD22CEB2B69005018C3 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BD02CEB2B69005018C3 /* AvatarCell.swift */; };
-		4B813BD32CEB2B69005018C3 /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BD12CEB2B69005018C3 /* AvatarCell.xib */; };
 		4B813BD52CEB310C005018C3 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BD42CEB310C005018C3 /* Avatar.swift */; };
 		4B813BDB2CEB4374005018C3 /* TextbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B813BD92CEB4374005018C3 /* TextbookViewController.swift */; };
 		4B813BDC2CEB4374005018C3 /* TextbookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B813BDA2CEB4374005018C3 /* TextbookViewController.xib */; };
@@ -35,10 +34,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7B13C02CEEC74C00A2782D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4B7B13C92CEEFB1900A2782D /* TeacherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCell.swift; sourceTree = "<group>"; };
+		4B7B13CA2CEEFB1900A2782D /* TeacherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherCell.xib; sourceTree = "<group>"; };
+		4B7B13CD2CEEFBED00A2782D /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		4B7B13CE2CEEFBED00A2782D /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
 		4B813BA22CEB0682005018C3 /* iOSTrainingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTrainingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B813BA52CEB0682005018C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B813BA72CEB0682005018C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B813BA92CEB0682005018C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B813BA92CEB0682005018C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4B813BAC2CEB0682005018C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B813BAE2CEB0683005018C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B813BB12CEB0683005018C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,13 +50,7 @@
 		4B813BBA2CEB06BE005018C3 /* CustomTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
 		4B813BC02CEB0716005018C3 /* LearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewController.swift; sourceTree = "<group>"; };
 		4B813BC12CEB0716005018C3 /* LearningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearningViewController.xib; sourceTree = "<group>"; };
-		4B813BC42CEB072D005018C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4B813BC52CEB072D005018C3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4B813BC82CEB0BF0005018C3 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
-		4B813BCB2CEB0C72005018C3 /* TeacherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCell.swift; sourceTree = "<group>"; };
-		4B813BCC2CEB0C72005018C3 /* TeacherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherCell.xib; sourceTree = "<group>"; };
-		4B813BD02CEB2B69005018C3 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
-		4B813BD12CEB2B69005018C3 /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
 		4B813BD42CEB310C005018C3 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		4B813BD92CEB4374005018C3 /* TextbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookViewController.swift; sourceTree = "<group>"; };
 		4B813BDA2CEB4374005018C3 /* TextbookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookViewController.xib; sourceTree = "<group>"; };
@@ -95,18 +93,22 @@
 			isa = PBXGroup;
 			children = (
 				4B813BA52CEB0682005018C3 /* AppDelegate.swift */,
-				4B813BA92CEB0682005018C3 /* ViewController.swift */,
+				4B813BA92CEB0682005018C3 /* HomeViewController.swift */,
 				4B813BD42CEB310C005018C3 /* Avatar.swift */,
 				4B813BA72CEB0682005018C3 /* SceneDelegate.swift */,
+				4B7B13C02CEEC74C00A2782D /* NetworkManager.swift */,
+				4B813BAB2CEB0682005018C3 /* Main.storyboard */,
 				4BC98E332CEC1E5D003E6E7E /* Model */,
 				4BC98E312CEC1CDF003E6E7E /* OtherTab */,
 				4B813BB92CEB06A2005018C3 /* CustomTabbar */,
-				4B813BBC2CEB06CC005018C3 /* Home */,
 				4BC98E322CEC1DF9003E6E7E /* TeachersProfile */,
-				4B813BAB2CEB0682005018C3 /* Main.storyboard */,
 				4B813BB02CEB0683005018C3 /* LaunchScreen.storyboard */,
 				4B813BAE2CEB0683005018C3 /* Assets.xcassets */,
 				4B813BB32CEB0683005018C3 /* Info.plist */,
+				4B7B13C92CEEFB1900A2782D /* TeacherCell.swift */,
+				4B7B13CA2CEEFB1900A2782D /* TeacherCell.xib */,
+				4B7B13CD2CEEFBED00A2782D /* AvatarCell.swift */,
+				4B7B13CE2CEEFBED00A2782D /* AvatarCell.xib */,
 			);
 			path = iOSTrainingProject;
 			sourceTree = "<group>";
@@ -119,17 +121,6 @@
 			path = CustomTabbar;
 			sourceTree = "<group>";
 		};
-		4B813BBC2CEB06CC005018C3 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4B813BC42CEB072D005018C3 /* HomeViewController.swift */,
-				4B813BC52CEB072D005018C3 /* HomeViewController.xib */,
-				4B813BCF2CEB2B30005018C3 /* AvatarCell */,
-				4B813BCA2CEB0C38005018C3 /* TeacherCell */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		4B813BBD2CEB06D1005018C3 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,24 +128,6 @@
 				4B813BC12CEB0716005018C3 /* LearningViewController.xib */,
 			);
 			path = Learning;
-			sourceTree = "<group>";
-		};
-		4B813BCA2CEB0C38005018C3 /* TeacherCell */ = {
-			isa = PBXGroup;
-			children = (
-				4B813BCB2CEB0C72005018C3 /* TeacherCell.swift */,
-				4B813BCC2CEB0C72005018C3 /* TeacherCell.xib */,
-			);
-			path = TeacherCell;
-			sourceTree = "<group>";
-		};
-		4B813BCF2CEB2B30005018C3 /* AvatarCell */ = {
-			isa = PBXGroup;
-			children = (
-				4B813BD02CEB2B69005018C3 /* AvatarCell.swift */,
-				4B813BD12CEB2B69005018C3 /* AvatarCell.xib */,
-			);
-			path = AvatarCell;
 			sourceTree = "<group>";
 		};
 		4B813BD62CEB42F0005018C3 /* FavoriteTutor */ = {
@@ -270,13 +243,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B813BD32CEB2B69005018C3 /* AvatarCell.xib in Resources */,
-				4B813BCE2CEB0C72005018C3 /* TeacherCell.xib in Resources */,
 				4B813BDC2CEB4374005018C3 /* TextbookViewController.xib in Resources */,
+				4B7B13D02CEEFBED00A2782D /* AvatarCell.xib in Resources */,
+				4B7B13CC2CEEFB1A00A2782D /* TeacherCell.xib in Resources */,
 				4B813BB22CEB0683005018C3 /* LaunchScreen.storyboard in Resources */,
 				4B813BAF2CEB0683005018C3 /* Assets.xcassets in Resources */,
 				4B813BE02CEB4384005018C3 /* MyPageViewController.xib in Resources */,
-				4B813BC72CEB072D005018C3 /* HomeViewController.xib in Resources */,
 				4B813BC32CEB0716005018C3 /* LearningViewController.xib in Resources */,
 				4B813BAD2CEB0682005018C3 /* Main.storyboard in Resources */,
 				4B813BEA2CEB442B005018C3 /* FavoriteTutorViewController.xib in Resources */,
@@ -291,19 +263,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B813BE92CEB442B005018C3 /* FavoriteTutorViewController.swift in Sources */,
-				4B813BCD2CEB0C72005018C3 /* TeacherCell.swift in Sources */,
-				4B813BD22CEB2B69005018C3 /* AvatarCell.swift in Sources */,
 				4B813BDB2CEB4374005018C3 /* TextbookViewController.swift in Sources */,
-				4B813BAA2CEB0682005018C3 /* ViewController.swift in Sources */,
+				4B7B13C12CEEC74C00A2782D /* NetworkManager.swift in Sources */,
+				4B813BAA2CEB0682005018C3 /* HomeViewController.swift in Sources */,
+				4B7B13CF2CEEFBED00A2782D /* AvatarCell.swift in Sources */,
 				4B813BA62CEB0682005018C3 /* AppDelegate.swift in Sources */,
 				4B813BC22CEB0716005018C3 /* LearningViewController.swift in Sources */,
+				4B7B13CB2CEEFB1900A2782D /* TeacherCell.swift in Sources */,
 				4B813BBB2CEB06BE005018C3 /* CustomTabbarController.swift in Sources */,
 				4B813BDF2CEB4384005018C3 /* MyPageViewController.swift in Sources */,
 				4B813BA82CEB0682005018C3 /* SceneDelegate.swift in Sources */,
 				4B813BC92CEB0BF0005018C3 /* Teacher.swift in Sources */,
 				4BC98E392CEC863C003E6E7E /* TeachersProfileComponent.swift in Sources */,
 				4B813BD52CEB310C005018C3 /* Avatar.swift in Sources */,
-				4B813BC62CEB072D005018C3 /* HomeViewController.swift in Sources */,
 				4BC98E352CEC1EA0003E6E7E /* TeachersProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

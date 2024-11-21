@@ -21,7 +21,8 @@ class CustomTabBarController: UITabBarController {
     tabBar.isTranslucent = false
   }
   private func configureViewControllers() {
-    let vc1 = HomeViewController()
+      let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
+
     let vc2 = FavoriteTutorViewController()
     let vc3 = TextbookViewController()
     let vc4 = LearningViewController()
